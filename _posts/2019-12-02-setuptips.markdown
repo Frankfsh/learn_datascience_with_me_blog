@@ -25,15 +25,21 @@ Distrowatch发布了一份详细的linux系统清单，它给我们了以下建�
 [原文地址](https://distrowatch.com/dwres.php?resource=major)
 #### Linux系统下载链接
 推荐使用Ubuntu操作系统
+
 [Ubuntu系统镜像下载地址](https://www.ubuntu.com/download)
+
 截至目前为止，网提供两个下载版本：
 Ubuntu server 18.04.2LTS #此为long-term support version，长期维护版，保质期到2023年6月（推荐）
-Ubuntu Server 19.04 #此为latest version，最新版，保质期相较短，到2020年一月
+Ubuntu Server 19.04 #此为latest version，最新版，保质期相较短，到2020年一月。
+
 [Centos系统镜像下载地址](https://www.centos.org/download/)
+
 主要有两种版本，截至目前为止：
 CentOS-7-x86_64-DVD-1810.iso #DVD版，此映像包含可以使用安装程序。这是大多数用户的推荐。
 CentOS-7-x86_64-Minimal-1810.iso #基本版，所有东西都需要使用yum安装。
+
 [Deepin系统镜像下载地址](https://www.deepin.org/download/)
+
 ### windows虚拟机的选择
 模拟器常用的有vmware workstation 和 virtual box
 关于两者的优劣，在网上有篇评分很高的文章，以下是其结论翻译：
@@ -51,10 +57,9 @@ VirtualBox和VMware都提供性能和高可靠性。最后的决定取决于你�
 #### 虚拟机下载链接
 推荐使用VirtualBox
 [VMvare workstation 下载地址](https://my.vmware.com/web/vmware/info?slug=desktop_end_user_computing/vmware_workstation_pro/12_0)
+
 [Virtualbox 下载地址](https://www.virtualbox.org/wiki/Downloads)
 
-接下来就可以在window系统中搭建Linux系统了，详细的教程如下：
-[基于VirtualBox安装Ubuntu图文教程](http://www.cnblogs.com/rocedu/p/6012545.html)
 ## python介绍
 ### Python发展历史
 [原文地址](http://www.cnblogs.com/vamei)
@@ -101,50 +106,39 @@ Python崇尚优美、清晰、简单，是一个优秀并广泛使用的语言�
 在Python的开发过程中，社区起到了重要的作用。Guido自认为自己不是全能型的程序员，所以他只负责制订框架。如果问题太复杂，他会选择绕过去，也就是cut the corner。这些问题最终由社区中的其他人解决。社区中的人才是异常丰富的，就连创建网站，筹集基金这样与开发稍远的事情，也有人乐意于处理。如今的项目开发越来越复杂，越来越庞大，合作以及开放的心态成为项目最终成功的关键。 Python从其他语言中学到了很多，无论是已经进入历史的ABC，还是依然在使用的C和Perl，以及许多没有列出的其他 语言。
 
 可以说，Python的成功代表了它所有借鉴的语言的成功。同样，Ruby借鉴了Python，它的成功也代表了Python某些方面的成功。每个语言都是混合体，都有它优秀的地方，但也有各种各样的缺陷。同时，一个语言“好与不好”的评 判，往往受制于平台、硬件、时代等等外部原因。程序员经历过许多语言之争。其实，以开放的心态来接受各个语言，说不定哪一天，程序员也可以如Guido那样，混合出自己的语言。
-### Pyhton和java的对比
-
-Python和Java是两种截然不同的编程语言，但两者对于现在的程序员来说都是十分有用的工具。如果你刚开始考虑学习编程，你可能会发现Python更加易学。Pyton的语法设计的非常直观，并且其相对的简单性让新手们可以快速上手写各种应用。而Java的学习曲线则更加陡峭，它非常适用于开发在各种平台上都可以运行的应用。
-
-
-* Dynamic vs Static Typing 动态类型 vs. 静态类型
-Python与Java之间最大的区别之一就是两种语言处理变量的方式。Java强迫你在第一次声明变量时定义其类型并且不允许你在后面的程序中更改它的类型。这就是所谓的静态类型。与之相对，Python使用的是动态类型，允许你改变一个变量的类型，例如可以把整型替换为字符串。
-动态类型对于菜鸟程序员来说更易处理，因为这意味着你可以随需使用你的变量而不需要在它们的类型上担心太多。然而，许多开发者主张静态类型减少了困扰你程序的未被发现的错误。变量在使用之前不需要显式声明的情况下，就会很容易拼错变量名然后不小心创建了一个全新的变量。
-
-* Braces vs Indentation 括号 vs. 缩进
-Python与众多编程语言的不同之处还在于它使用缩进将代码分割成块。Java，像大部分其他语言一样，使用大括号定义函数和类定义的开头和结尾。使用缩进的好处在于它强迫你将你的程序写得比较易读，不会有缺括号导致错误的可能。
-* Speed vs Portability 速度 vs. 可移植性
-Java的一个很大的好处就是它可用于开发平台独立的应用。任何可以运行Java虚拟机的电脑或者移动设备都可以运行Java的应用，而不管你在哪里运行Python的程序你都需要一个编译器来将Python代码转化为你特定的操作系统可理解的代码。归功于Java Web应用和简单桌面程序的流行，大部分设备已经安装了Java虚拟机，所以Java程序员可以自信的说他们的应用几乎对所有用户都可用。在虚拟机内运行程序的缺点是Java程序比Python的程序运行速度要慢。
-[原文地址](https://blog.udemy.com/python-vs-java/)
-
-相关链接：
-[Python vs Java: Which is best? Code examples and comparison for 2019](
-https://raygun.com/blog/java-vs-python/)
-[Java vs Python : Comparison between the Best Programming](Languageshttps://www.edureka.co/blog/java-vs-python/)
-
-有趣的语言选择地图：
-![ca12d60f22feac5b8a9a14f6d4141d7e.png](en-resource://database/550:1)
-[图片链接](http://blogs.perceptionsystem.com/php-java-python-programming-language-learn-first/)
 ### Python的版本
 Python在历史上主要有两个重大的版本，我们通常称之为2.7x和3x。但是由于Pyhton的历史悠久，Gui叔在1989年开始编写python的时候，早于第一版Unicode标准。晚于 Unicode 标准出现的语言都选择在支持 Unicode 编码的基础上实现自己的str类型。支持 Unicode 和来自任何语言的的文本是非常重要的。Python是一门面向世界的语言，而不只是那些支持 ASCII 码覆盖的罗马数字的语言。这就是为什 Python3在处理文本时选择“要么使用 Unicode，要么就干脆不支持”的原因。
 总之现在有两个选择，学习python2，学习python3或者都学。我的建议是都学，不过以python3为主。
 
-[为什么会有 Python 3 的存在？](http://python.jobbole.com/84890/)
+
+
 [Why Python3 新功能示例](https://whypy3.com)
+
+
+
 [Python2和Python3的区别，以及为什么选Python3的原因](https://blog.csdn.net/qq_39521554/article/details/80855086)
-[Python2.x与3版本区别](http://www.runoob.com/python/python-2x-3x.html)
+
+
+
 [Python 2.7.x 与 Python 3.x 的主要差异](https://chenqx.github.io/2014/11/10/Key-differences-between-Python-2-7-x-and-Python-3-x/)
+
 ### Python的下载和安装
 #### Python下载
 Python最新源码，二进制文档，新闻资讯等可以在Python的官网查看到：
+
 [Python官网](https://www.python.org/)
+
 你可以在以下链接中下载 Python 的文档，你可以下载 HTML、PDF 和 PostScript 等格式的文档。
+
 [Python文档下载地址](https://www.python.org/doc/)
+
 #### Python安装
 for window，官网提供三种下载文件：
 * web-based installer 是需要通过联网完成安装的版本
-* executable installer 是可执行文件（*.exe）方式安装版本
+
+* executable installer 是可执行文件方式安装版本
 * embeddable zip file 嵌入式版本，可以集成到其它应用中
-[Python 安装菜鸟教程](https://www.runoob.com/python3/python3-install.html)
+
 for Ubuntu，直接在终端用命令安装即可：
 * Prerequsities
 ```
@@ -177,10 +171,15 @@ python3 -V
 ```
 示例：若要下载最新版本3.8.0，则用8.0替换上述命令中的x即可。
 相关命令为：
-apt-get install xxxx
-安装 apt-get remove xxxx 卸载但不删除配置 
-apt-get purge xxxx 卸载并且删除相关配置 
-apt-cache search xxxx 寻找xxxx软件，返回一系列能够下载的软件
+
+`apt-get install xxxx` 安装
+
+`apt-get remove xxxx` 卸载但不删除配置
+
+`apt-get purge xxxx` 卸载并且删除相关配置
+
+`apt-cache search xxxx` 寻找xxxx软件，返回一系列能够下载的软件
+
 ## Python编辑器
 ### python编辑器的选择
 一个好的代码编辑器不仅仅是一个简单的文本编辑工具，这是发生奇迹的地方，开发者编写的代码会转化为更大的项目的可用组件。鉴于这一重要性，难怪开发者会对与他们日夜共处的代码编辑器如此挑剔。每个开发者都希望拥有一个快速、易于使用且功能均衡的代码编辑器。
@@ -193,23 +192,30 @@ Notepad++编辑器我主要是代替window系统默认的文本编辑器。
 #### Vim
 Vim是最流行的代码编辑器之一，被称为编译器之神。
 vi是“Visual interface”的简称，它在Linux上的地位就仿佛Edit程序在DOS上一样。它可以执行输出、删除、查找、替换、块操作等众多文本操作，而且用户可以根据自己的需要对其进行定制。Vi不是一个排版程序，它不象Word或WPS那样可以对字体、格式、段落等其他属性进行编排，它只是一个文本编辑程序。 vi没有菜单，只有命令，且命令繁多。它是免费开源且跨平台的，称它为代码编辑器中最为优秀经典的上古神器也不为过。尤其是在 Linux 开发者中，它享有相当高的声誉。Vim高度可定制，还可在 Dos 中运行。在刚入门开发的群体中Vim可能不会十分流行，因为它的入门学习曲线陡峭。但是一旦掌握就可以摆脱鼠标，仅凭肌肉记忆，沉静在纯净的代码世界。Vim或许在日后实际的工作中很少使用，但是它的输入逻辑是永久有效的。
+
 [下载地址](http://www.vim.org/download.php)
-[Vim/安装的维基教科书教程](https://zh.wikibooks.org/zh-hans/Vim/%E5%AE%89%E8%A3%85)
 
 #### Sublime
 Sublime轻量化，跨平台，可扩展，和vim相比具有良好的图形界面环境。它支持vim模式。可是为收费软件，建议有能力的人付费使用，以支持开发者。不过不购买也可以一直使用。
+
 [下载地址](https://www.sublimetext.com/3)
-[Sublime Text 3 全程详细图文教程](https://www.cnblogs.com/wind128/p/4409422.html)
+
+#### atom
+
+Atom 是 Github 开源的文本编辑器，这个编辑器完全是使用Web技术构建的(基于Node-Webkit)。启动速度快，提供很多常用功能的插件和主题，可以说Atom已经足以胜任“半个IDE”了。
+
+[下载地址](https://atom.io/)
 
 #### Pycharm
 PyCharm是一种Python IDE，其有别于以上的编辑器。
 集成开发环境（IDE，Integrated Development Environment ）是用于提供程序开发环境的应用程序，一般包括代码编辑器、编译器、调试器和图形用户界面等工具。集成了代码编写功能、分析功能、编译功能、调试功能等一体化的开发软件服务套。所有具备这一特性的软件或者软件套（组）都可以叫集成开发环境。
 Pycharm带有一整套可以帮助用户在使用Python语言开发时提高其效率的工具，比如调试、语法高亮、Project管理、代码跳转、智能提示、自动完成、单元测试、版本控制。主要有两个版本：professional和community。professional 表示专业版，community 是社区版，推荐安装社区版，因为是免费使用的。
-[下载地址](https://www.jetbrains.com/pycharm/download/#section=windows)
-[官网安装详细教程地址](https://www.jetbrains.com/help/pycharm/meet-pycharm.html)
-我看了国内中文教程很鸡肋，官网英文教程很仔细足够好了，还可以在网站最上方选择系统类型，图文并茂，相信你可以看懂。
 
-# 万事具备，只欠python。准备开始学习。
+[下载地址](https://www.jetbrains.com/pycharm/download/#section=windows)
+
+[官网安装详细教程地址](https://www.jetbrains.com/help/pycharm/meet-pycharm.html)
+
+我看了国内中文教程很鸡肋，官网英文教程很仔细足够好了，还可以在网站最上方选择系统类型，图文并茂，相信你可以看懂。
 
 ### The Zen of Python（Pyhton之禅）
 Beautiful is better than ugly.
