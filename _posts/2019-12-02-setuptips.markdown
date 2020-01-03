@@ -5,17 +5,19 @@ categories: “Tips”
 permalink: :/categories/:day/:month:/year
 ---
 
-## 操作系统配置
-### 操作系统的选择
-### Linux操作系统简介
-#### Linux的由来
+## Linux操作系统简介
+### Linux的由来
 Linux最初是于1991 年的十月，由一个名为 Linus Torvalds的年轻芬兰大学生带头开发的作业系统.Linux 是一套 Unix-like 的作业系统，是 Unix 的一种，它控制整个系统基本服务的核心程式 (kernel) 是由 Linus 带头开发出来的，Linux这个名称便是以Linus's Minix来命名，Linus 选择用大众公有版权(General Public License,GPL)的方式来发行这份程式，即Linux 实际上是免费开源的，任何个人和组织均可随心所欲的与更改 Linux 的原始程式，这一特点吸引了无数电脑高手投入开发、改善 Linux 的核心程式，使得 Linux 的功能日见强大，所以今日我们可以在网路上免费下载 Linux 使用，或者花很少的一点费用就可以取得 Linux 光碟，这都是因为 Linux 是 GPL 版权的缘故
 Linux的发行版本可以大体分为两类，一类是商业公司维护的发行版本RedHat系列，另一类是社区组织维护的发行版本Debian系列. 
+
+### Linux系统的选择
+
 #### Ubuntu版本
+
 Ubuntu严格来说不能算一个独立的发行版本，Ubuntu是基于Debian的unstable版本加强而来，可以这么说，Ubuntu就是 一个拥有Debian所有的优点，以及自己所加强的优点的近乎完美的 Linux桌面系统。根据选择的桌面系统不同，有三个版本可供选择，基于Gnome的Ubuntu，基于KDE的Kubuntu以及基于Xfc的 Xubuntu。特点是界面非常友好，容易上手，对硬件的支持非常全面，是最适合做桌面系统的Linux发行版本。
 #### Deepin版本
 Deepin中文翻译为深度，还记得那个win7时代的深度技术和雨林木风么。它就是由深度技术开发的Linux版本。算是国产linux系统中颜值担当。deepin系统也有很多人性化的小功能，例如自带的vim并已经具有良好的configuration，非常适合国人linux小白。商店应用也高度符合国人口味。
-#### Linux系统的选择
+#### 系统选择建议
 Distrowatch发布了一份详细的linux系统清单，它给我们了以下建议：
 
 Ubuntu、Linux Mint和MX Linux被认为是新用户最容易使用的，他们想要在不需要掌握所有复杂性的情况下，尽快在Linux中提高生产力。
@@ -30,7 +32,7 @@ CentOS是一个企业发行版，适合那些更喜欢稳定性、可靠性和�
 
 
 
-#### Linux系统下载链接
+## Linux系统下载链接
 
 推荐使用Ubuntu操作系统
 
@@ -48,7 +50,7 @@ CentOS-7-x86_64-Minimal-1810.iso #基本版，所有东西都需要使用yum安�
 
 [Deepin系统镜像下载地址](https://www.deepin.org/download/)
 
-### windows虚拟机的选择
+## 虚拟机的选择
 模拟器常用的有vmware workstation 和 virtual box
 关于两者的优劣，在网上有篇评分很高的文章，以下是其结论翻译：
 VirtualBox和VMware是市场上排名前两位的虚拟化平台，这使得在这两种产品之间进行选择变得很困难。本文对VirtualBox和VMware最重要的特性进行了解释和比较，以帮助您做出最适合自己的正确选择。你可以参考以下建议:
