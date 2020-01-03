@@ -21,7 +21,7 @@
 title: 和我一起学习数据科学
 email: fansonghai@qq.com
 description: >- # this means to ignore newlines until "baseurl:"
-从2020年开始，每天上传我的学习日记。记录数据学习的点点滴滴。
+ 从2020年开始，每天上传我的学习日记。记录数据学习的点点滴滴。
 baseurl: "/learn_datascience_with_me_blog" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  Frankfsh
