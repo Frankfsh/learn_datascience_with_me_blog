@@ -1,10 +1,9 @@
 ---
 layout: post
-title:  "Vim入门"
+title:  "「实用小技能之」Vim入门"
 categories: "Tips"
 permalink: /:categories/:day/:month/:year
 ---
-# Vim入门
 ## 什么是 vim？
 所有的 Unix Like 系统都会内建 vi 文书编辑器，其他的文书编辑器则不一定会存在。
 但是目前我们使用比较多的是 vim 编辑器。
