@@ -1,8 +1,9 @@
+---
 layout: post
 title: "灵敏度分析 Sensitivity Analysis"
 categories: "Bus_Int_Mod"
 permalink: /:categories/:day/:month/:year
-
+---
 ## 灵敏度分析
 
 ### 灵敏度报告组成
@@ -89,4 +90,3 @@ permalink: /:categories/:day/:month/:year
 * 当决策变量的最优解等于上限时，说明该变量有助于改进目标函数。能多制造就多制造，所以减少成本最优值非负。但是只要减少成本不为零，则说明不是最优解。所以这种情况只会在有多余限制的情况下出现。
 
 ### 同时改变目标函数的系数
-
