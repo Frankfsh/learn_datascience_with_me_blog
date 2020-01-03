@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "PYTHON入门短平快"
+categories: “python”
+permalink: :/categories/:day/:month:/year
+
+---
+
+## 
