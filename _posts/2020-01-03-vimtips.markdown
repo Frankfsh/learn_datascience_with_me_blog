@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "「实用小技能之」Vim入门"
+title:  "「实用小技巧之」Vim入门"
 categories: "Tips"
 permalink: /:categories/:day/:month/:year
 ---

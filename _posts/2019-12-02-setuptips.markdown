@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "「实用小技能之」学习环境配置"
+title:  "「实用小技巧之」学习环境配置"
 categories: “Tips”
 permalink: :/categories/:day/:month:/year
 ---
@@ -120,15 +120,9 @@ Python崇尚优美、清晰、简单，是一个优秀并广泛使用的语言�
 Python在历史上主要有两个重大的版本，我们通常称之为2.7x和3x。但是由于Pyhton的历史悠久，Gui叔在1989年开始编写python的时候，早于第一版Unicode标准。晚于 Unicode 标准出现的语言都选择在支持 Unicode 编码的基础上实现自己的str类型。支持 Unicode 和来自任何语言的的文本是非常重要的。Python是一门面向世界的语言，而不只是那些支持 ASCII 码覆盖的罗马数字的语言。这就是为什 Python3在处理文本时选择“要么使用 Unicode，要么就干脆不支持”的原因。
 总之现在有两个选择，学习python2，学习python3或者都学。我的建议是都学，不过以python3为主。
 
-
-
 [Why Python3 新功能示例](https://whypy3.com)
 
-
-
 [Python2和Python3的区别，以及为什么选Python3的原因](https://blog.csdn.net/qq_39521554/article/details/80855086)
-
-
 
 [Python 2.7.x 与 Python 3.x 的主要差异](https://chenqx.github.io/2014/11/10/Key-differences-between-Python-2-7-x-and-Python-3-x/)
 
@@ -181,8 +175,6 @@ python3 -V
 ```
 示例：若要下载最新版本3.8.0，则用8.0替换上述命令中的x即可。
 
-
-
 相关命令为：
 
 `apt-get install xxxx` 安装
@@ -213,7 +205,7 @@ Sublime轻量化，跨平台，可扩展，和vim相比具有良好的图形界�
 
 [下载地址](https://www.sublimetext.com/3)
 
-#### atom
+#### Atom
 
 Atom 是 Github 开源的文本编辑器，这个编辑器完全是使用Web技术构建的(基于Node-Webkit)。启动速度快，提供很多常用功能的插件和主题，可以说Atom已经足以胜任“半个IDE”了。
 
