@@ -18,12 +18,20 @@ Deepin中文翻译为深度，还记得那个win7时代的深度技术和雨林�
 #### Linux系统的选择
 Distrowatch发布了一份详细的linux系统清单，它给我们了以下建议：
 
-* Ubuntu、Linux Mint和MX Linux被认为是新用户最容易使用的，他们想要在不需要掌握所有复杂性的情况下，尽快在Linux中提高生产力。
-* Arch Linux、Gentoo和Slackware Linux是更高级的发行版，需要大量的学习才能有效地使用它们。
-* openSUSE、Fedora、Debian GNU/Linux可以被划分为良好的“中间道路”发行版，这些发行版通常用作其他发行版的基础。
-* CentOS是一个企业发行版，适合那些更喜欢稳定性、可靠性和长期支持而不是尖端功能和软件的人。
+Ubuntu、Linux Mint和MX Linux被认为是新用户最容易使用的，他们想要在不需要掌握所有复杂性的情况下，尽快在Linux中提高生产力。
+
+Arch Linux、Gentoo和Slackware Linux是更高级的发行版，需要大量的学习才能有效地使用它们。
+
+openSUSE、Fedora、Debian GNU/Linux可以被划分为良好的“中间道路”发行版，这些发行版通常用作其他发行版的基础。
+
+CentOS是一个企业发行版，适合那些更喜欢稳定性、可靠性和长期支持而不是尖端功能和软件的人。
+
 [原文地址](https://distrowatch.com/dwres.php?resource=major)
+
+
+
 #### Linux系统下载链接
+
 推荐使用Ubuntu操作系统
 
 [Ubuntu系统镜像下载地址](https://www.ubuntu.com/download)
