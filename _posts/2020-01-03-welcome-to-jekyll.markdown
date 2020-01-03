@@ -1,29 +1,144 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2020-01-03 11:44:53 +1100
-categories: jekyll update
+title:  "Vim入门"
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+# Vim入门
+[TOC]
+## 什么是 vim？
+所有的 Unix Like 系统都会内建 vi 文书编辑器，其他的文书编辑器则不一定会存在。
+但是目前我们使用比较多的是 vim 编辑器。
+vim 具有程序编辑的能力，可以主动的以字体颜色辨别语法的正确性，方便程序设计。简单的来说， vi 是老式的字处理器，不过功能已经很齐全了，但是还是有可以进步的地方。 vim 则可以说是程序开发者的一项很好用的工具。连 vim 的官方网站 ([http://www.vim.org](http://www.vim.org)) 自己也说 vim 是一个程序开发工具而不是文字处理软件。
+## vim陡峭的学习曲线
+学习vi或vim并不容易。但其实也没那么难。在任何情况下，它都比使用其他编辑器进行编辑更快、更强大、更高效，因此您可以很好地投入时间和精力来学习它。
+Viemu作为一个vi爱好者，为学习vi或vim的人提供一个图形化的备忘单，他还发现这是构建教程的一个非常好的方法。以下是他的详细教程：
 
-Jekyll requires blog post files to be named according to the following format:
+## 图形vi-vim备忘单
+这是一个描述完整的vi/vim输入模型、所有键的功能和所有主要特性的页面。您可以将其视为压缩的vi/vim手册。
+英文原版
+![vim cheating paper](http://www.viemu.com/vi-vim-cheat-sheet.gif)
 
-`YEAR-MONTH-DAY-title.MARKUP`
+## 图形教程
+图形教程由7节课组成，涵盖了vi/vim中的主要命令。它们的结构使您可以先学习最简单和最有用的，然后再学习更高级的。实际上，仅使用第1课中所示的命令，您就可以开始在vi/vim中进行编辑。
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+### 第一课 基础编辑
+![vim cheating paper](http://www.viemu.com/vi-vim-tutorial-1.gif)
+基础：
+* `h，j， k，l` 是vi/vim的光标移动方向键。k键向上移动一行，j键向下移动一行。h键向左移动一行，l键向右移动一行。当然你也可以用键盘上的方向键去移动光标。
+* 使用`i`进入编辑模式，光标从块状变为竖线，接着你就可以输入文本了。使用`Esc`返回普通模式。
+* 使用`x`删除当前的字母，或者`X`删除当前左边的那个。
+* 使用`A`在行尾插入文本，无论你在这一行的哪一个位置都可以进行这样的操作。
+（注意：输入模式实际上和传统的文本编辑器很相似，你可以使用方向键移动光标，backspace和delete等等）
 
-Jekyll also offers powerful support for code snippets:
+额外：
+* 使用`u`可以撤销上一次的行为，传统的vi只能支持一次撤销，而vim支持无限次撤销。（使用`CTRL -R` 撤回撤销）
+* `0` 可以直接跳转至行首, `$` 跳转至行尾, `^` 跳转至非空行首（也就是说，如果行首为空格或者tab键，`0` 会直接跳转至行首，而 `^` 只会跳转至文本开头）
+* 使用`w，e，b`可以在词组块间移动。词组块以字母数字混合为划分标准。`w`是以块首向后移动，`e`是以块尾向后移动，`b`是以块首向前移动。
+* 使用`W，E，B`可以在词组块间移动。词组块以非空文本为划分标准（也就是空格和换行符等）。`W`是以块首向后移动，`E`是以块尾向后移动，`B`是以块首向前移动。
+* 使用`R`以取代的光标进入替换模式，输入的文本会替代掉原先的文本。
+* `:` `w`后回车保存 `:` `q`后回车退出
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+这就是vim的基本工能，你会注意到其实vim有若干种模式。
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+* 当你在终端敲入vim的时候进入到的是普通模式：
+* 当你敲入`i`的时候，进入到输入模式；敲入`A`的时候，进入输入模式并跳转至行末。
+ 屏幕下方出现INSERT的字样，代表你现在处于输入模式。
+* 当你敲入`R`的时候，进入到替换模式：
+ 屏幕下方出现REPLACE的字样，代表你现在处于替换模式。
+* 当你敲入 : 的时候，进入命令行模式：
+ 光标跳转至底部，且在：后闪烁, 代表你进入命令行模式
+* 在任何模式下敲击`Esc`回到普通模式。
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+### 第二课 操作和重复
+![vim cheating paper](http://www.viemu.com/vi-vim-tutorial-2.gif)
+基础：
+* `f`紧跟另一个键入，移动光标到当前行中键入字符的位置。`F`则为向后寻找。
+* `t`和`T`效果相似，只不过光标会停留在字符的右侧。
+* `d`（delete）删除，紧跟其他键入来确定删除范围。例如：`dw`组合会删除当前光标的位置到下一个字母数字组合词块的块首之间的内容。`df-` 组合则会删除当前光标的位置到此行下一个"-"字符之间的内容。`dd`则为删除整行文本。 一些移动命令，例如`j`和`k`作用范围是以行为单位的，`dj`组合会删除包括当前行在内向下一行的文本。
+* `c`（change）更改，效果和`d`相似，只不过会继续留在输入模式。
+* `.` 会重复上一次的编辑行为：文本输入，删除或者更改等等。行为发生在光标所在的位置。
+
+额外：
+预先考虑组合中的操作次数，例如：
+* `d2w` 会删除到第二个字母数字组合词块的块首。
+* `d2t,` 会删除到第二个逗号之前（不包括第二个逗号）。
+* `2i` 会在你结束输入模式（按下Esc之后）重复你之前的输入内容一次。
+* `v` 会进入可视化模式，移动光标可以选中光标掠过的文本。选中文本高亮，可供操作。
+* `V`和`v`类似，只不过选中的是光标掠过的所有行。
+* `CTRL-v` 进入块状可视化模式，选中的区域成矩形方块。
+
+### 第三课 复制
+![vim cheating paper](http://www.viemu.com/vi-vim-tutorial-3.gif)
+基础：
+* 使用`y`接上其他操作进行拖拽也就是复制。
+* 使用`p`在之后粘贴（如果是字符段，贴于右侧；如果是行段，贴于下侧）。
+* 使用`P`在之前粘贴。
+* `yy`拷贝当前行。
+* `y`在可视化模式下配合使用
+* 被`d，c，x`删除的文本其实也被拖拽到剪贴板里了！
+
+额外：
+* 灰色引号键涉及寄存器和系统剪贴板，暂不介绍。
+`o`进入输入模式并且在当前行下方新建一个空的行。
+`O`和`o`类似，只不过在上方新建空行。
+
+### 第四课 搜索
+![vim cheating paper](http://www.viemu.com/vi-vim-tutorial-4.gif)
+基础：
+
+* `/` 是基本的搜索命令，在之后键入你想搜索的内容然后按下回车。当然你可以配合其他操作命令来实现丰富的效果。
+* `?` 做一样的事，只不过是反向搜索。
+* `n` 重复上次的搜索；`N` 反向重复上次的搜索。
+* 要注意的是搜索的目标满足基本的表达式，例如：
+`a\*b` 表示0或多个a和b的拼接字段。
+ `^abc` 表示以abc开头的行列。
+`[0-9]` 表示0-9之间的任意数字。
+
+### 第五课 标记和宏
+![vim cheating paper](http://www.viemu.com/vi-vim-tutorial-5.gif)
+标记：
+* 使用`m`紧跟字母`a-z`可以做一个标记。
+* 使用 `\`` 紧跟字母回到标记处。
+* 使用 `'` 紧跟字母返回标记那一行非空开头处
+* `A-Z`标记为全局标记，`a-z`为临时标记。
+* `\`  .` 回到上一次变动的地方。
+
+宏：
+
+* 使用`q`紧接`a-z`开始记录。
+* 再次使用`q`停止记录。
+* `@` 紧接字母重复录制的宏。
+* `@@` 重复上一次录制的宏。
+
+### 第六课 多样移动
+![vim cheating paper](http://www.viemu.com/vi-vim-tutorial-6.gif)
+
+* `%` 在匹配的'('，')'和'['，']'之间跳转。
+* `H，M，L`直接跳转至屏幕的上中下。
+* `-/+` 在行间跳跃。
+* `K` 会调用光标所在词的自查手册。
+* `(，)` 跳跃至当前句段的开头或者结尾。
+* `{，}` 跳跃至上一个或者下一个空行。
+* `[[, ]]` 跳跃至上一个'{'或者'}'。
+
+### 第七课 其他
+![vim cheating paper](http://www.viemu.com/vi-vim-tutorial-7.gif)
+基础：
+
+* `J` 合并当前行和下一行，或者所有可视化模式中选中的行。
+* `r` 紧跟任意字符替换成当前字符。
+* `C` 是`c$` 的快捷键，更改至行末。
+* `D` 是`d$` 的快捷键， 删除至行末。
+* `Y` 是`yy` 的快捷键，删除当前整行。
+* `s` 删除光标下的字符并进入编辑模式。
+* `S` 删除当前行并进入编辑模式。
+
+额外：
+
+* `>` 缩进当前行或者选中的行。
+* `>` 缩进当前行或者选中的行。
+* `<` 反向缩进。
+* `=` 重新格式范围内中的文本。
+* 所有以上命令都在可视化模式中进行，你也可以直接重复命令， 例如 `>>` 操作当前行。
+* `~` 命令可以大写光标所在字母。
+
+好了，差不多就这些吧，接下来你可以自己拿着完整的备忘单去学习巩固。相信掌握它们是小菜一碟。
