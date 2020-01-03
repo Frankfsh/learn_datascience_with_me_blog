@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "学习环境配置"
+title:  "「实用小技能之」学习环境配置"
 categories: “Tips”
 permalink: :/categories/:day/:month:/year
 ---
