@@ -21,7 +21,7 @@ permalink: /:categories/:day/:month/:year
 ### 还是那个🌰
 
 一般来说模型求解的外观如下图3.1所示，蓝脊公司的案例。
-![7af124f0b939e95705e546c1109018d9.png](evernotecid://930DF8AD-B3D4-4F9A-8747-0B99221014DD/wwwevernotecom/182780468/ENResource/p98)
+![figure_3.1.png](https://github.com/Frankfsh/learn_datascience_with_me_blog/blob/gh-pages/images/Bus_Int_Mod/figure_3.1.png?raw=true)
 
 它包含有三个部分：
 
@@ -30,7 +30,7 @@ permalink: /:categories/:day/:month/:year
 * 约束单元格constraint cells
 
 打开solver的面板，一一对应输入如图所示的参数：
-![ddea5a9a7954eecf27e94aaab69d41e2.png](evernotecid://930DF8AD-B3D4-4F9A-8747-0B99221014DD/wwwevernotecom/182780468/ENResource/p100)
+![figure_solver_parameters.png](https://github.com/Frankfsh/learn_datascience_with_me_blog/blob/gh-pages/images/Bus_Int_Mod/figure_slover_parameters.png?raw=true)
 接下来点击solve，软件就会自动求解最优解，并生成灵敏度报告。
 
 更多的例子请参见课本，有多种多样的表格建立方式对应不同的线性规划问题。

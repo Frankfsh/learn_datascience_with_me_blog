@@ -54,8 +54,7 @@ aqua-spas和hydro-luxes的生产数量
 一个典型的线性优化问题，在二维的时候，我们可以使用图解法更为形象的了解我们是如何找到最优解的。每个限制条件可以表示在以x1和x2为轴的坐标系中，我们就可以得到目标函数的可行域，再根据最大化最小化的问题，我们可以移动目标函数所对应的直线，在可行域中寻找最优解。（如图2.6所示）
 
 
-[图2.6](images/Bus_Int_Mod/figure_2.6.png)
-
+![图2.6.png](https://github.com/Frankfsh/learn_datascience_with_me_blog/blob/gh-pages/images/Bus_Int_Mod/figure_2.6.png?raw=true)
 
 
 ### 最优化问题中常见的情况
@@ -63,7 +62,7 @@ aqua-spas和hydro-luxes的生产数量
 * 多个最优解
 
 假设aqua-spa的价格提升到450而不是350，会发生什么情况呢？（如图2.9）
-![77465ddb1ea1a7aa23277a10feaa1495.png](evernotecid://930DF8AD-B3D4-4F9A-8747-0B99221014DD/wwwevernotecom/182780468/ENResource/p97)
+![图2.9.png](https://github.com/Frankfsh/learn_datascience_with_me_blog/blob/gh-pages/images/Bus_Int_Mod/figure_2.9.png?raw=true)
 
 
 这个时候等值线沿着可行域的边缘与可行域相交，这时候在线段上的点就都是最优解。从而出现了多个最优解的特殊情况。计算机在遇到这样的情况中，只会给出边缘上的一个顶点作为最优解。在某些特定的问题中，我们还希望出现多个最优解。
@@ -71,7 +70,7 @@ aqua-spas和hydro-luxes的生产数量
 * 多余约束
 
 还是蓝脊的例子，如果有225台水泵可以使用而不是200台，会发生什么情况？（如图2.10）
-![1ba19c9b0964242dafe2ac69f5b6facf.png](evernotecid://930DF8AD-B3D4-4F9A-8747-0B99221014DD/wwwevernotecom/182780468/ENResource/p95)
+![图2.10.png](https://github.com/Frankfsh/learn_datascience_with_me_blog/blob/gh-pages/images/Bus_Int_Mod/figure_2.10.png?raw=true)
 
 
 这个时候注意，图中有一条线没有与可行域相交，，也就是说，水泵的约束并没有在确定问题可行域域的时候起作用。虽然多余约束不会影响我们的结果，但是它对计算机来说是额外的垃圾，所以删除它可以减轻计算机的负担。另一方面，如果你的模型会被不断修改，那么这个多余约束可能会在确定可行域的时候再次起到作用。

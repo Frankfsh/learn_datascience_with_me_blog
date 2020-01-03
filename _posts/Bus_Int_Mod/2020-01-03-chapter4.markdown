@@ -8,7 +8,7 @@ permalink: /:categories/:day/:month/:year
 
 接着上一章，我们来到最重要的环节，理解并运用灵敏度分析。
 如图4.1，slover为我们提供三种报告：
-![c28a8d7318c0f4d6238309060e2839cc.png](evernotecid://930DF8AD-B3D4-4F9A-8747-0B99221014DD/wwwevernotecom/182780468/ENResource/p101)
+![figure_4.1.png](https://github.com/Frankfsh/learn_datascience_with_me_blog/blob/gh-pages/images/Bus_Int_Mod/figure_4.1.png?raw=true)
 它们分别是：
 
 * 运算结果 Answer
@@ -19,7 +19,7 @@ permalink: /:categories/:day/:month/:year
 
 最重要的就是灵敏度报告，也是我们解读的重点。它汇总了当单元格内的数据改变时，最优解的敏感程度。我们在之前学到了，当目标函数的系数变化时，最优解会发生变化，产生多重最优解，甚至无解。
 我们先来看看着报告长什么样：
-![47c0941b9ca1eeaf2bb9f4f94932a733.png](evernotecid://930DF8AD-B3D4-4F9A-8747-0B99221014DD/wwwevernotecom/182780468/ENResource/p102)
+![figure_4.3.png](https://github.com/Frankfsh/learn_datascience_with_me_blog/blob/gh-pages/images/Bus_Int_Mod/figure_4.3.png?raw=true)
 
 我们注意到，对于变量单元格和约束单元格我们都有允许改变的range。这有一个前提条件，就是假设其他所有系数都保持不变时有效。我们后面会学到，如何确定同时改变两个或者多个目标函数的系数，现在的解仍然是保持最优。
 
