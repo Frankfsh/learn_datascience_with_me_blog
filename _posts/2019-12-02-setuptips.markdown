@@ -178,6 +178,9 @@ sudo make altinstall
 python3 -V
 ```
 示例：若要下载最新版本3.8.0，则用8.0替换上述命令中的x即可。
+
+
+
 相关命令为：
 
 `apt-get install xxxx` 安装
@@ -224,43 +227,3 @@ Pycharm带有一整套可以帮助用户在使用Python语言开发时提高其�
 [官网安装详细教程地址](https://www.jetbrains.com/help/pycharm/meet-pycharm.html)
 
 我看了国内中文教程很鸡肋，官网英文教程很仔细足够好了，还可以在网站最上方选择系统类型，图文并茂，相信你可以看懂。
-
-### The Zen of Python（Pyhton之禅）
-Beautiful is better than ugly.
-美优于丑。
-Explicit is better than implicit.
-明确优于隐晦 。
-Simple is better than complex.
-简单优于复杂。
-Complex is better than complicated.
-复杂也好过繁复。
-Flat is better than nested.
-扁平优于嵌套。
-Sparse is better than dense.
-稀疏优于拥挤。
-Readability counts.
-可读性很重要。
-Special cases aren't special enough to break the rules.
-我们以为的特例也往往没有特殊到必须打破上述规则的程度，
-Although practicality beats purity.
-固然代码实用与否 比洁癖更重要。
-Errors should never pass silently.
-不要无故忽视异常，
-Unless explicitly silenced.
-除非你是故意的。
-In the face of ambiguity, refuse the temptation to guess.
-如果遇到模棱两可的逻辑，请不要自作聪明地瞎猜。
-There should be one-- and preferably only one --obvious way to do it.
-应该提供一种，且最好只提供一种，一目了然的解决方案
-Although that way may not be obvious at first unless you're Dutch.
-当然这是没法一蹴而就的，除非你是荷兰人
-Now is better than never.
-固然，立刻着手好过永远不做。
-Although never is often better than right now.
-然而，永远不做也好过不审慎思考地瞎搞
-If the implementation is hard to explain, it's a bad idea.
-如果你的实现很难解释，它就一定不是个好主意
-If the implementation is easy to explain, it may be a good idea.
-即使你的实现简单到爆，它也有可能是个好办法
-Namespaces are one honking great idea -- let's do more of those!
-命名空间一定要用，它是个好主意！
