@@ -6,4 +6,4 @@ permalink: :/categories/:day/:month:/year
 
 ---
 
-## 
+## Python 入门
