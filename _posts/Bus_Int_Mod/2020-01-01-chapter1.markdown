@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "建模与决策分析引论 Introduction to Modelling and Decision Analysis"
-categories: "Bus_Int_Mod"
+categories: Bus_Int_Mod
 permalink: /:categories/:day/:month/:year
 ---
 ## 建模与决策分析引论

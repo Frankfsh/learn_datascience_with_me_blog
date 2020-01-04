@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "灵敏度分析 Sensitivity Analysis"
-categories: "Bus_Int_Mod"
+categories: Bus_Int_Mod
 permalink: /:categories/:day/:month/:year
 ---
 ## 灵敏度分析

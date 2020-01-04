@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "最优化与线性规划导论 Introduction to Optimization and Linear Programming"
-categories: "Bus_Int_Mod"
+categories: Bus_Int_Mod
 permalink: /:categories/:day/:month/:year
 ---
 ## 最优化与线性规划导论
