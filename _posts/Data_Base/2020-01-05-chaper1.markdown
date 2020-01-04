@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "数据库系统 Database system"
+title:  "数据库系统 Database system - 数据模型"
 categories: Database
 permalink: :/categories/:day/:month:/year
 
@@ -34,7 +34,7 @@ permalink: :/categories/:day/:month:/year
 
 在接下来的学习学习中，我们运用的是实体联系模型（entity-relationship）。它于1976年由Pter Chen提出。与其配套使用的还有鸦足标示法（Crow's foot notation）。ER图用来表示面向终端用户所看到的的概念数据。它用于描述数据库的主要组件，包括实体，属性和联系。
 
-以下为设计相关概念的汇总表：
+#### 实体联系模型基本概念
 
 | 概念名词                          | 解释                                                         |
 | --------------------------------- | ------------------------------------------------------------ |
@@ -52,5 +52,7 @@ permalink: :/categories/:day/:month:/year
 
 在RDVMS中无法实现多值属性，因此可将复合属性分解为为多个单值属性。但是这会导致过多空值。常见的做法是构建一个由原始多值属性中成分组成的新实体。
 
-### 互连（connectivities）和基数（cardinalities）
+#### 互连（connectivities）和基数（cardinalities）
+
+互联描述为联系类型，基数表示与相关实体发生联系的最多和最少的实例数。
 
