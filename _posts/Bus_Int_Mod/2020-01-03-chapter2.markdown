@@ -1,9 +1,40 @@
 ---
 layout: post
-title: "灵敏度分析 Sensitivity Analysis"
+title: "线性优化问题再电子表格中的建模和求解 Modeling and Solving LP Problems in a Spreadsheet"
 categories: Bus_Int_Mod
 permalink: /:categories/:day/:month/:year
 ---
+## 线性优化问题再电子表格中的建模和求解
+
+前面我们讨论了如何建立线性优化的数学模型以及图解法求解最优解，但是仅仅涉及两个变量。但变量多于两个，我们便无法再二维平面去解决。幸运的是，我们可以使用计算机去解决，而不用具体去想可行域是什么样的。因为三维空间就已经很难图解表示了，更何况四维或者更高维度。
+完整版的office套件，带有solver工具可以帮助我们解决这个问题。
+
+### 在电子表格中实施模型的步骤
+
+1. 在电子表格中合理的组织数据
+2. 为决策变量预留单元格
+3. 在电子表格中建立对应的目标函数表达式
+4. 对于每个约束建立对应的左侧表达式公式
+
+实施的顺序可能根据特殊情况改变，但是首先考虑清楚1，2两步式很明智的。
+
+### 还是那个🌰
+
+一般来说模型求解的外观如下图3.1所示，蓝脊公司的案例。
+![figure_3.1.png](https://github.com/Frankfsh/learn_datascience_with_me_blog/blob/gh-pages/images/Bus_Int_Mod/figure_3.1.png?raw=true)
+
+它包含有三个部分：
+
+* 目标单元格set（target）cell
+* 变量单元格variable cells
+* 约束单元格constraint cells
+
+打开solver的面板，一一对应输入如图所示的参数：
+![figure_solver_parameters.png](https://github.com/Frankfsh/learn_datascience_with_me_blog/blob/gh-pages/images/Bus_Int_Mod/figure_slover_parameters.png?raw=true)
+接下来点击solve，软件就会自动求解最优解，并生成灵敏度报告。
+
+更多的例子请参见课本，有多种多样的表格建立方式对应不同的线性规划问题。
+
 ## 灵敏度分析
 
 ### 灵敏度报告组成
