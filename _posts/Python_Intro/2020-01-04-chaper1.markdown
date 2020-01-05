@@ -1,9 +1,33 @@
 ---
 layout: post
-title:  "PYTHON入门短平快"
+title:  "数据科学向的PYTHON 🐍 Charpter1 "
 categories: python
 permalink: :/categories/:day/:month:/year
 
 ---
 
-## Python 入门
+在这一章，你将会学到
+
+* 定义无参数的函数
+* 定义有参数的函数
+* 定义有返回值的函数
+* 多个参数和返回值
+
+## Build-in function内建函数
+
+在python里有很多内建好的函数可供我们使用，例如：str（），print（）
+
+### str()
+
+```python
+x = str(5)
+print(x)
+```
+
+`'5'`
+
+```python
+print(type(x))
+```
+
+`<class 'str'>`

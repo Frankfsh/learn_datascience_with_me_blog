@@ -30,11 +30,17 @@ permalink: :/categories/:day/:month:/year
 
 如何将现实的问题，合理的转化为数据模型，拆分成实体属性和联系是重点。
 
+## 数据模型设计流程
+
+明确需求 ——> 概念设计（conceptual design）——> 逻辑设计（logical design）——> 实体设计（physical design）
+
 ## 实体联系模型
 
-在接下来的学习学习中，我们运用的是实体联系模型（entity-relationship）。它于1976年由Pter Chen提出。与其配套使用的还有鸦足标示法（Crow's foot notation）。ER图用来表示面向终端用户所看到的的概念数据。它用于描述数据库的主要组件，包括实体，属性和联系。
+在接下来的学习学习中，我们运用的是实体联系模型（entity-relationship）。它于1976年由Pter Chen提出。与其配套使用的还有鸦足标示法（Crow's foot notation）。ER图用来表示面向终端用户所看到的的概念设计。它用于描述数据库的主要组件，包括实体，属性和联系。
 
-#### 实体联系模型基本概念
+### 实体联系模型基本概念
+
+#### 概念名词汇总表
 
 | 概念名词                          | 解释                                                         |
 | --------------------------------- | ------------------------------------------------------------ |
@@ -54,5 +60,11 @@ permalink: :/categories/:day/:month:/year
 
 #### 互连（connectivities）和基数（cardinalities）
 
-互联描述为联系类型，基数表示与相关实体发生联系的最多和最少的实例数。
+互联描述为联系类型，基数表示与相关实体发生联系的最多和最少的实例数。如图4.7所示。
+
+![figure4.7](https://github.com/Frankfsh/learn_datascience_with_me_blog/blob/gh-pages/images/Data_Base/figure_4.7.png?raw=true)
+
+
+
+
 
