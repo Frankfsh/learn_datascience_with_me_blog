@@ -1,0 +1,147 @@
+---
+layout: post
+title:  "数据科学向的PYTHON 🐍 Charpter2 作用域的概念"
+categories: python
+permalink: :/categories/:day/:month:/year
+---
+
+## Scope in function 函数里作用域的概念
+
+不是所有的object都可以在任意的地方可以access。在python里每一个object（可以是变量也可以是函数）都是有一个获取的范围，这个范围被称为作用域。
+
+一般来说，python搜寻的顺序如下：
+
+- local scope 本地作用域
+- global scope 全局作用域
+- Built-in scope 内置作用域
+
+```python
+new_val = 10
+def square(value): 
+  """Returns the square of a number."""
+  new_val = value ** 2
+  return new_val
+print(square(3))
+print(new_val)
+```
+
+> 9
+>
+> 10
+
+在函数里，new_val的值被赋予9并被返回，但是在函数外，它依然是10。
+
+### global关键字
+
+我们可以使用`global`去标注变量，来告诉python先从哪个scope查找。
+
+请看下面的例子：
+
+```python
+num = 5
+def func1():
+    num = 3
+    print(num)
+
+def func2():
+    global num
+    double_num = num * 2
+    num = 6
+    print(double_num)
+func1()
+func2()
+print(num)
+```
+
+> 3
+>
+> 10
+>
+> 6
+
+全局变量`num`=5，在`func1`输出局部变量`num` = 3，而在`func2`中输出局部变量`double_num` = 5*2=10。随后修改`num`=6，因为局部变量被`global`修饰全局化，所以赋值直接修改全局变量。所以在执行完`func2`后，全局变量`num`等于6。
+
+### Nested functions 嵌套函数
+
+有些时候我们在同一个函数内需要重复的使用相同的运算，例如：
+
+```python
+def mod2plus5(x1, x2, x3):
+  """Returns the remainder plus 5 of three values."""
+  new_x1 = x1 % 2 + 5
+  new_x2 = x2 % 2 + 5
+  new_x3 = x3 % 2 + 5
+  return (new_x1, new_x2, new_x3)
+```
+
+这样做不够优雅，此时我们可以使用嵌套函数到达同样的目的：
+
+```python
+def mod2plus5(x1, x2, x3):
+  """Returns the remainder plus 5 of three values."""
+  def inner(x):
+    """Returns the remainder plus 5 of a value."""
+    return x % 2 + 5
+  return (inner(x1), inner(x2), inner(x3))
+```
+
+```python
+print(mod2plus5(1, 2, 3))
+```
+
+> (6, 5, 6)
+
+嵌套函数的好处不仅可以减少重复的代码，还可以闭包储存局部变量，例如：
+
+```python
+def raise_val(n):
+  """Return the inner function."""
+  def inner(x):
+    """Raise x to the power of n."""
+    raised = x ** n
+    return raised
+  return inner
+```
+
+```python
+square = raise_val(2)
+cube = raise_val(3)
+print(square(2), cube(4))
+```
+
+> 4 64
+
+注意`raise_val(2)`的返回值是`inner`，相当于创建了一个新的函数名叫`square`。其参数2被传入`inner`保存了下来。再次调用`square`时，`n`已被赋值2，所以返回值`raised`为2的平方4。
+
+### nonlocal 关键字
+
+我们已经知道global可以修饰本地变量变为全局变量。nonlocal相当于嵌套函数内的全局。里层函数通过nonlocal可以修改外层函数的变量。如下：
+
+```python
+def outer():
+    n = 3
+    def inner():
+        nonlocal n
+        n = 2
+        ininer()
+        print(n)
+    inner()
+    print(n)
+outer()
+```
+
+> 2
+>
+> 2
+
+函数外层的变量被`inner`函数修改，所以两次输出都为2。
+
+### LEGB scope searched sequence 作用域的顺序
+
+现在我们可以定义完整的作用域顺序了，也被称为LEGB法则。
+
+- **L**ocal scope 本地作用域
+- **E**nclosing 嵌套作用域
+- **G**lobal scope 全局作用域
+- **B**uilt-in scope 内置作用域
+
