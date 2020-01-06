@@ -24,7 +24,7 @@ print(type(x))
 
 > <class 'str'>
 
-### Dening a function 定义函数
+### Define a function 定义函数
 
 python中的函数由header和body组成。header def后面的为定义名称，（）里为该函数调用的参数。body里写具体执行的运算。
 
