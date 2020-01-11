@@ -1,0 +1,91 @@
+---
+
+layout: post
+title:  "数据科学向的PYTHON 🐍 Charpter3 函数参数"
+categories: python
+permalink: :/categories/:day/:month:/year
+---
+
+## Default and flexiable arguments 默认和可变参数。
+
+### Add default arguments 添加默认参数
+
+```python
+def power(number, pow=1):
+  """ number to the power of pow."""
+  new_value = number ** pow
+  return new_value
+power(9, 2)
+```
+
+```
+81
+```
+
+在传入参数时，我们可以给参数赋予初始值，也成默认参数。这样做在保留参数可调节的最大程度少减少了重复的输入。是一种很neat的做法。此时，我们在调用power函数的时候可以只传入一个参数，也可以两个都传。但是至少要传入一个参数。
+
+### Flexiable aruguemnts 可变参数
+
+当我们不确定输入的参数个数时，可以用`*args`来代替未知个数的参数。例如：
+
+```python
+def add_all(*args):
+  """Sum all values in *args together."""
+  # Initialize sum
+  sum_all = 0
+  # Accumulate the sum
+  for num in args:
+    sum_all += num
+  return sum_all
+
+add_all(5, 10, 15)
+add_all(5, 10, 15, 20)
+```
+
+```
+30
+50
+```
+
+或者，我们想传入字典类似的关键值参数也是可以的，可以用`**kwargs`来代替。例如：
+
+```python
+def print_all(**kwargs):
+  """Print out key-value pairs in **kwargs."""
+  # Print out the key-value pairs
+  for key, value in kwargs.items():
+    print(key + \": \" + value)
+  
+print_all(name="dumbledore", job="headmaster")
+```
+
+```
+job: headmaster
+name: dumbledore
+```
+
+### 更多关于函数参数
+
+#### 参数默认值
+
+默认值只会执行一次。这条规则在默认值为可变对象(列表、字典以及大多数类实例)时很重要。比如，下面的函数会存储在后续调用中传递给它的参数:
+
+```python
+def f(a, L=[]):
+  L.append(a)
+  return L
+
+print(f(1))
+print(f(2))
+print(f(3))
+```
+
+```
+[1]
+[1, 2]
+[1, 2, 3]
+```
+
+#### 关键字参数
+
+也就是上面提到的类似字典的参数数据类型。

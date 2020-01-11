@@ -16,13 +16,17 @@ x = str(5)
 print(x)
 ```
 
-> 5
+```
+5
+```
 
 ```python
 print(type(x))
 ```
 
-> <class 'str'>
+```
+<class 'str'>
+```
 
 ### Define a function 定义函数
 
@@ -35,7 +39,9 @@ def square(): # <- Function header
 square()
 ```
 
-> 16
+```
+16
+```
 
 函数里调用了print（）内建，在屏幕上输出了16。这是pyhton最常用的output的方法。
 
@@ -50,7 +56,9 @@ def square(value):
 square(4)
 ```
 
-> 16
+```
+16
+```
 
 ### Return values from functions 函数返回值
 
@@ -64,7 +72,9 @@ num = square(4)
 print(num)
 ```
 
-> 16
+```
+16
+```
 
 ### Docstrings 文档字符串
 
@@ -93,7 +103,9 @@ result = raise_to_power(2, 3)
 print(result)
 ```
 
-> 8
+```
+8
+```
 
 ### Returning multiple values 返回多个值
 
@@ -111,6 +123,8 @@ result = raise_both(2, 3)
 print(result)
 ```
 
-> (8, 9)
+```
+(8, 9)
+```
 
-上面例子中的`(new_value1, new_value2)`为元组类型数据，它的特点是用圆括号（parentheses） `()`来建立。
+上面例子中的`(new_value1, new_value2)`为元组类型数据，它的特点是用圆括号 `()`来建立。
